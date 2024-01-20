@@ -1,0 +1,48 @@
+Algorithm:
+
+Step 1: Create a structure containing an integer data and 2 pointers left and right.
+Step 2: Print a menu containing the operations on the binary search tree - 1 for Insert, 2 for Display, 3 for Delete and 4 for Exit.
+Step 3: Start a loop to accept choice from the user and call the corresponding function for each choice.
+Step 4: If choice == 1, accept element to insert and call insert().
+Step 5: If choice == 2, call preorder(),postorder() and inorder() to print the Preoder,Postorder and Inorder travesals of the binary search tree.
+Step 6: If choice == 3, accept element to delete and call delete().
+Step 7: If choice != 1,2,3,4 print 'Invalid Input'.
+Step 7: Stop (when choice == 4).
+
+insert():
+Step 1: If there is no node, create a newnode with data = element and left and right childs = NULL.
+Step 2: If element < node, recursively insert at left.
+Step 3: Else, recursively insert at right.
+Step 4: Return node.
+Step 5: Stop.
+
+preorder():
+Step 1: If root != NULL,
+Step 2: Print data in root.
+Step 3: Recursively call preorder of root of left.
+Step 3: Recursively call preorder of root of right.
+Step 4: Stop.
+
+postorder():
+Step 1: If root != NULL,
+Step 2: Recursively call postorder of root of left.
+Step 3: Recursively call postorder of root of right.
+Step 3: Print data in root.
+Step 4: Stop.
+
+inorder():
+Step 1: If root != NULL,
+Step 2: Recursively call inorder of root of left.
+Step 3: Print data in root.
+Step 3: Recursively call inorder of root of right.
+Step 4: Stop.
+
+delete():
+Step 1: If root is NULL return root
+Step 2: If element < data in root, recursively call delete on the left of root.
+Step 3: Else if element > data in root, recursively call delete on the right of root.
+Step 4: Else, if left child of root == NULL, return right child of root.
+Step 5: else if right child of root == NULL, return left child of root.
+Step 6: else, find the inorder successor of right child of root and set data of root = data of inorder successor and call delete recursively on right of root.
+Step 7: Return root.
+Step 8: Stop.

@@ -1,0 +1,38 @@
+Algorithm:
+
+Step 1: Create a structure containing integers data and key and initialise an array of size 10.
+Step 2: Print a menu containing the operations on the binary search tree - 1 for Insert, 2 for Delete, 3 for Search, 4 for Display and 5 for Exit.
+Step 3: Start a loop to accept choice from the user and call the corresponding function for each choice.
+Step 4: If choice == 1, accept element and key to insert and call insert().
+Step 5: If choice == 2, accept key to delete and call delete().
+Step 6: If choice == 3, accept key to search and call search() and print the element or print 'not found' if key not in the hash table.
+Step 7: If choice == 4, call display().
+Step 8: If choice != 1,2,3,4,5 print 'Invalid Input'.
+Step 9: Stop (when choice == 5). 
+
+insert():
+Step 1: Allocate memory for item to search for and set data and key of item as the element and key passed to the function.
+Step 2: Compute the hashindex using hashcode = key % SIZE.
+Step 3: Start a loop to traverse the array until an empty or deleted cell.
+Step 4: Set array[hashindex] = item.
+Step 5: Stop.
+
+delete():
+Step 1: Compute the hashindex of the key of the passed element(item).
+Step 2: Traverse through the array. 
+Step 3: If a key match is found, assign a dummy item in its position (eg. -1).
+Step 4: Else, return NULL.
+Step 5: Stop.
+
+search():
+Step 1: Get the hashindex of the passed key.
+Step 2: Traverse through the array.
+Step 3: If a key match is found, return the element of the key.
+Step 4: Else, return NULL.
+Step 5: Stop
+
+display():
+Step 1: Start a loop to traverse through the array.
+Step 2: If element in array is not NULL, print key and value in that index.
+Step 3: Else, print '---'.
+Step 4: Stop

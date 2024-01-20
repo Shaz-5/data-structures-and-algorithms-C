@@ -1,0 +1,40 @@
+Algorithm for Union and Find Operations:
+
+Step1: Start.
+Step2: Create array for disjoint sets.
+Step3: Initialize the array elements to zero.
+Step4: Display a menu with options 1 for Union, 2 for Find and 3 for exit.
+Step5: Start a loop to accept choice and call the corresponding functions for each choice iteratively.
+Step6: If choice = 1 accept the 2 numbers to perform Union.
+Step7: If choice = 2 accept the number to perform Find.
+Step8: Stop (When choice = 3).
+
+
+Find():
+Step1: Start.
+Step2: If root of passed number is 0, return index.
+Step3: Else, recursively find the root of the passed number and return index.
+Step4: Stop.
+
+
+Union():
+Step1: Start.
+Step2: Perform Find operation on both the passed numbers.
+Step3: If the roots of both numbers are not equal, set the first number as the root of the second one.
+Step4: Stop.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

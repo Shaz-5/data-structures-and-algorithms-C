@@ -1,0 +1,24 @@
+Algorithm for BFS and DFS:
+
+Step1: Start.
+Step2: Input number of vertices.
+Step3: Create array for adjacency matrix.
+Step4: Start a loop to enter the connections of each vertex, input 0 for no connection and 1 for connection.
+Step6: Print the adjacency matrix.
+Step7: Print the BFS and DFS Traversals.
+Step8: Stop.
+
+
+DFS():
+Step1: Start.
+Step2: Print the root.
+Step3: Start a loop to traverse through the graph and add vertices to an array and print each vertex value if not already visited(using recursion).
+Step4: Stop.
+
+
+BFS():
+Step1: Start
+Step2: Print the root.
+Step3: Start a loop to traverse through the graph and add vertices to a queue and print each vertex value if not already visited(using recursion).
+Step4: Stop.
+
